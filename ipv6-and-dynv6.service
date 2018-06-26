@@ -1,0 +1,11 @@
+[Unit]
+Wants=network-online.target
+After=network.target
+
+[Service]
+ExecStart=/etc/ipv6-and-dynv6/ipv6-and-dynv6.sh
+User=root
+Group=root
+
+[Install]
+WantedBy=default.target
